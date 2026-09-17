@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="NEXORA AI — Intelligence, reimagined."
+  >
+
+  <title>NEXORA AI — Intelligence, Reimagined</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- BACKGROUND -->
+  <div class="background">
+    <div class="grid"></div>
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="noise"></div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor"></div>
+  <div class="cursor-dot"></div>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+
+    <a href="#home" class="logo">
+      <span class="logo-mark">
+        N
+      </span>
+
+      <span class="logo-text">
+        NEXORA<span>AI</span>
+      </span>
+    </a>
+
+    <nav class="nav-links">
+
+      <a href="#home" class="active">
+        Home
+      </a>
+
+      <a href="#tools">
+        AI Tools
+      </a>
+
+      <a href="#playground">
+        Playground
+      </a>
+
+      <a href="#about">
+        About
+      </a>
+
+    </nav>
+
+    <button class="nav-button" id="openStudio">
+      Enter Studio
+      <span>↗</span>
+    </button>
+
+    <button
+      class="menu-button"
+      id="menuButton"
+      aria-label="Ouvrir le menu"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+  </header>
+
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+
+    <a href="#home">Home</a>
+    <a href="#tools">AI Tools</a>
+    <a href="#playground">Playground</a>
+    <a href="#about">About</a>
+
+    <button id="mobileStudio">
+      Enter Studio ↗
+    </button>
+
+  </div>
+
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero section" id="home">
+
+      <div class="hero-content">
+
+        <div class="status">
+          <span class="status-dot"></span>
+          NEXORA AI SYSTEM ONLINE
+        </div>
+
+        <h1>
+          Intelligence
+          <br>
+
+          <span class="gradient-text">
+            Reimagined.
+          </span>
+        </h1>
+
+        <p class="hero-description">
+          A next-generation AI studio for creating,
+          building, analyzing and exploring what comes next.
+        </p>
+
+        <div class="hero-actions">
+
+          <button class="primary-button" id="heroStudio">
+            <span>Enter Studio</span>
+            <span class="arrow">→</span>
+          </button>
+
+          <a href="#tools" class="secondary-button">
+            Explore AI
+            <span>↓</span>
+          </a>
+
+        </div>
+
+        <div class="hero-meta">
+
+          <div>
+            <strong>06</strong>
+            <span>AI TOOLS</span>
+          </div>
+
+          <div>
+            <strong>24/7</strong>
+            <span>AVAILABLE</span>
+          </div>
+
+          <div>
+            <strong>∞</strong>
+            <span>POSSIBILITIES</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- AI CORE -->
+      <div class="ai-visual">
+
+        <div class="visual-label top-label">
+          NEURAL CORE
+        </div>
+
+        <div class="core">
+
+          <div class="core-ring ring-one"></div>
+          <div class="core-ring ring-two"></div>
+          <div class="core-ring ring-three"></div>
+
+          <div class="core-center">
+
+            <div class="core-symbol">
+              N
+            </div>
+
+            <div class="core-status">
+              PROCESSING
+            </div>
+
+          </div>
+
+          <div class="particle particle-one"></div>
+          <div class="particle particle-two"></div>
+          <div class="particle particle-three"></div>
+          <div class="particle particle-four"></div>
+
+        </div>
+
+        <div class="visual-label bottom-label">
+          SYSTEM // 001
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MARQUEE -->
+    <section class="marquee-section">
+
+      <div class="marquee">
+
+        <span>CREATE</span>
+        <span>✦</span>
+        <span>ANALYZE</span>
+        <span>✦</span>
+        <span>BUILD</span>
+        <span>✦</span>
+        <span>DISCOVER</span>
+        <span>✦</span>
+
+        <span>CREATE</span>
+        <span>✦</span>
+        <span>ANALYZE</span>
+        <span>✦</span>
+        <span>BUILD</span>
+        <span>✦</span>
+        <span>DISCOVER</span>
+        <span>✦</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+    <section class="intro section">
+
+      <div class="section-number">
+        01 / 04
+      </div>
+
+      <div class="intro-content">
+
+        <p class="eyebrow">
+          THE FUTURE OF CREATION
+        </p>
+
+        <h2>
+          One intelligence.
+          <br>
+          <span>Infinite directions.</span>
+        </h2>
+
+        <p>
+          NEXORA brings powerful AI capabilities into
+          one beautifully designed creative environment.
+          From ideas to execution, everything starts here.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- TOOLS -->
+    <section class="tools section" id="tools">
+
+      <div class="section-header">
+
+        <div>
+          <p class="eyebrow">
+            CAPABILITIES
+          </p>
+
+          <h2>
+            AI Tools
+          </h2>
+        </div>
+
+        <p class="section-description">
+          Six intelligent systems.
+          One unified experience.
+        </p>
+
+      </div>
+
+
+      <div class="tools-grid">
+
+        <article class="tool-card featured">
+
+          <div class="tool-top">
+            <span class="tool-number">01</span>
+            <span class="tool-icon">✦</span>
+          </div>
+
+          <div class="tool-content">
+
+            <h3>
+              Text
+            </h3>
+
+            <p>
+              Generate, rewrite, summarize and
+              transform ideas into powerful content.
+            </p>
+
+          </div>
+
+          <button class="tool-launch">
+            Launch
+            <span>→</span>
+          </button>
+
+        </article>
+
+
+        <article class="tool-card">
+
+          <div class="tool-top">
+            <span class="tool-number">02</span>
+            <span class="tool-icon">◈</span>
+          </div>
+
+          <div class="tool-content">
+
+            <h3>
+              Vision
+            </h3>
+
+            <p>
+              Understand images, extract information
+              and discover visual patterns.
+            </p>
+
+          </div>
+
+          <button class="tool-launch">
+            Launch
+            <span>→</span>
+          </button>
+
+        </article>
+
+
+        <article class="tool-card">
+
+          <div class="tool-top">
+            <span class="tool-number">03</span>
+            <span class="tool-icon">&lt;/&gt;</span>
+          </div>
+
+          <div class="tool-content">
+
+            <h3>
+              Code
+            </h3>
+
+            <p>
+              Build, debug and explore software
+              with an intelligent coding assistant.
+            </p>
+
+          </div>
+
+          <button class="tool-launch">
+            Launch
+            <span>→</span>
+          </button>
+
+        </article>
+
+
+        <article class="tool-card">
+
+          <div class="tool-top">
+            <span class="tool-number">04</span>
+            <span class="tool-icon">⌁</span>
+          </div>
+
+          <div class="tool-content">
+
+            <h3>
+              Data
+            </h3>
+
+            <p>
+              Turn complex information into
+              understandable insights.
+            </p>
+
+          </div>
+
+          <button class="tool-launch">
+            Launch
+            <span>→</span>
+          </button>
+
+        </article>
+
+
+        <article class="tool-card">
+
+          <div class="tool-top">
+            <span class="tool-number">05</span>
+            <span class="tool-icon">✧</span>
+          </div>
+
+          <div class="tool-content">
+
+            <h3>
+              Create
+            </h3>
+
+            <p>
+              Explore concepts, visuals and
+              creative possibilities with AI.
+            </p>
+
+          </div>
+
+          <button class="tool-launch">
+            Launch
+            <span>→</span>
+          </button>
+
+        </article>
+
+
+        <article class="tool-card">
+
+          <div class="tool-top">
+            <span class="tool-number">06</span>
+            <span class="tool-icon">⌕</span>
+          </div>
+
+          <div class="tool-content">
+
+            <h3>
+              Research
+            </h3>
+
+            <p>
+              Explore information, connect ideas
+              and accelerate discovery.
+            </p>
+
+          </div>
+
+          <button class="tool-launch">
+            Launch
+            <span>→</span>
+          </button>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- PLAYGROUND -->
+    <section class="playground section" id="playground">
+
+      <div class="playground-copy">
+
+        <p class="eyebrow">
+          EXPERIMENT
+        </p>
+
+        <h2>
+          Enter the
+          <span>Playground.</span>
+        </h2>
+
+        <p>
+          Write an idea. Ask a question.
+          Start exploring.
+        </p>
+
+      </div>
+
+
+      <div class="terminal">
+
+        <div class="terminal-header">
+
+          <div class="terminal-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <span>
+            nexora.playground
+          </span>
+
+          <span class="terminal-online">
+            ● ONLINE
+          </span>
+
+        </div>
+
+
+        <div class="terminal-body">
+
+          <div class="terminal-line">
+            <span class="prompt">nexora@ai:~$</span>
+            <span> initialize playground</span>
+          </div>
+
+          <div class="terminal-response">
+            System ready.
+            What would you like to create?
+          </div>
+
+          <div class="terminal-input">
+
+            <span class="prompt">
+              &gt;
+            </span>
+
+            <input
+              type="text"
+              id="promptInput"
+              placeholder="Ask NEXORA anything..."
+              autocomplete="off"
+            >
+
+            <button id="sendPrompt">
+              ↗
+            </button>
+
+          </div>
+
+          <div
+            class="terminal-result"
+            id="terminalResult"
+          ></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+
+      <div class="section-number">
+        04 / 04
+      </div>
+
+      <div class="about-content">
+
+        <p class="eyebrow">
+          ABOUT NEXORA
+        </p>
+
+        <h2>
+          Technology should
+          <span>expand imagination.</span>
+        </h2>
+
+        <p>
+          NEXORA AI is a conceptual next-generation
+          creative studio designed around one idea:
+          powerful technology should feel simple,
+          intuitive and inspiring.
+        </p>
+
+        <div class="about-stats">
+
+          <div>
+            <strong>01</strong>
+            <span>UNIFIED STUDIO</span>
+          </div>
+
+          <div>
+            <strong>06</strong>
+            <span>AI SYSTEMS</span>
+          </div>
+
+          <div>
+            <strong>∞</strong>
+            <span>CREATIVE POTENTIAL</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="final-cta section">
+
+      <div class="cta-glow"></div>
+
+      <p class="eyebrow">
+        READY?
+      </p>
+
+      <h2>
+        Build what's
+        <span>next.</span>
+      </h2>
+
+      <button class="primary-button" id="finalStudio">
+
+        <span>Enter NEXORA</span>
+        <span class="arrow">→</span>
+
+      </button>
+
+    </section>
+
+  </main>
+
+
+  <!-- STUDIO MODAL -->
+  <div class="studio-modal" id="studioModal">
+
+    <div class="studio-window">
+
+      <div class="studio-window-header">
+
+        <div class="logo">
+          <span class="logo-mark">N</span>
+          <span class="logo-text">
+            NEXORA<span>AI</span>
+          </span>
+        </div>
+
+        <button id="closeStudio">
+          ×
+        </button>
+
+      </div>
+
+
+      <div class="studio-layout">
+
+        <aside class="studio-sidebar">
+
+          <button class="studio-side active">
+            ✦
+            <span>Overview</span>
+          </button>
+
+          <button class="studio-side">
+            ◈
+            <span>Vision</span>
+          </button>
+
+          <button class="studio-side">
+            &lt;/&gt;
+            <span>Code</span>
+          </button>
+
+          <button class="studio-side">
+            ✧
+            <span>Create</span>
+          </button>
+
+        </aside>
+
+
+        <div class="studio-main">
+
+          <div class="studio-welcome">
+
+            <span class="status">
+              <span class="status-dot"></span>
+              SYSTEM READY
+            </span>
+
+            <h2>
+              Welcome to
+              <span>NEXORA.</span>
+            </h2>
+
+            <p>
+              Your intelligent creative workspace
+              is ready.
+            </p>
+
+          </div>
+
+
+          <div class="studio-command">
+
+            <textarea
+              id="studioInput"
+              placeholder="What would you like to create?"
+            ></textarea>
+
+            <button id="studioSend">
+              Run →
+            </button>
+
+          </div>
+
+
+          <div
+            class="studio-output"
+            id="studioOutput"
+          >
+            <span class="output-label">
+              NEXORA OUTPUT
+            </span>
+
+            <p>
+              Awaiting your first command...
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-logo">
+      NEXORA<span>AI</span>
+    </div>
+
+    <p>
+      Intelligence, reimagined.
+    </p>
+
+    <span>
+      © 2026 NEXORA AI
+    </span>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

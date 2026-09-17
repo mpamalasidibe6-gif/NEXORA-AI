@@ -1,0 +1,352 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEXORA AI — Workspace</title>
+
+    <meta
+        name="description"
+        content="NEXORA AI Intelligence Workspace"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="workspace.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="background-grid"></div>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <!-- APP -->
+    <div class="workspace-app">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-top">
+
+                <a href="../index.html" class="brand">
+                    <span class="brand-mark">
+                        N
+                    </span>
+
+                    <span class="brand-name">
+                        NEXORA<span>AI</span>
+                    </span>
+                </a>
+
+                <button
+                    class="new-chat"
+                    id="newChatBtn"
+                    type="button"
+                >
+                    <span>＋</span>
+                    <span>New conversation</span>
+                </button>
+
+                <!-- NAVIGATION -->
+                <nav class="workspace-nav">
+
+                    <button class="nav-item active" data-mode="chat">
+                        <span class="nav-icon">◉</span>
+                        <span>AI Chat</span>
+                    </button>
+
+                    <button class="nav-item" data-mode="vision">
+                        <span class="nav-icon">◈</span>
+                        <span>Vision</span>
+                    </button>
+
+                    <button class="nav-item" data-mode="code">
+                        <span class="nav-icon">&lt;/&gt;</span>
+                        <span>Code</span>
+                    </button>
+
+                    <button class="nav-item" data-mode="data">
+                        <span class="nav-icon">▦</span>
+                        <span>Data</span>
+                    </button>
+
+                    <button class="nav-item" data-mode="create">
+                        <span class="nav-icon">✦</span>
+                        <span>Create</span>
+                    </button>
+
+                </nav>
+
+                <!-- RECENT -->
+                <div class="recent-section">
+
+                    <div class="section-label">
+                        RECENT
+                    </div>
+
+                    <div class="conversation-list" id="conversationList">
+
+                        <button class="conversation active">
+                            <span>◉</span>
+                            <span>Welcome to NEXORA</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- SIDEBAR BOTTOM -->
+            <div class="sidebar-bottom">
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+
+                    <div>
+                        <strong>System Online</strong>
+                        <small>NEXORA Core v2.0</small>
+                    </div>
+                </div>
+
+                <button class="back-home" id="backHomeBtn">
+                    ← Back to NEXORA
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN -->
+        <main class="main-workspace">
+
+            <!-- TOPBAR -->
+            <header class="workspace-header">
+
+                <div class="header-left">
+
+                    <button
+                        class="mobile-menu"
+                        id="mobileMenuBtn"
+                        type="button"
+                        aria-label="Open menu"
+                    >
+                        ☰
+                    </button>
+
+                    <div>
+                        <div class="workspace-title">
+                            AI Workspace
+                        </div>
+
+                        <div class="workspace-subtitle">
+                            Intelligence, reimagined.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="header-right">
+
+                    <div class="model-selector">
+                        <span class="model-dot"></span>
+                        <span>NEXORA Core</span>
+                        <span class="selector-arrow">⌄</span>
+                    </div>
+
+                    <button
+                        class="icon-button"
+                        id="clearBtn"
+                        type="button"
+                        aria-label="Clear conversation"
+                    >
+                        ⌫
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- CHAT AREA -->
+            <section class="chat-area" id="chatArea">
+
+                <!-- WELCOME -->
+                <div class="welcome-screen" id="welcomeScreen">
+
+                    <div class="ai-orb">
+
+                        <div class="orb-ring ring-a"></div>
+                        <div class="orb-ring ring-b"></div>
+                        <div class="orb-ring ring-c"></div>
+
+                        <div class="orb-core">
+                            N
+                        </div>
+
+                    </div>
+
+                    <div class="welcome-status">
+                        <span></span>
+                        NEXORA CORE ONLINE
+                    </div>
+
+                    <h1>
+                        What will we
+                        <span>create</span>
+                        today?
+                    </h1>
+
+                    <p>
+                        Ask questions, generate ideas,
+                        write code, analyze information
+                        or explore something new.
+                    </p>
+
+                    <!-- SUGGESTIONS -->
+                    <div class="suggestions">
+
+                        <button
+                            class="suggestion"
+                            data-prompt="Explique-moi comment fonctionne l'intelligence artificielle."
+                        >
+                            <span>◉</span>
+                            <div>
+                                <strong>Explore AI</strong>
+                                <small>Explain a complex concept</small>
+                            </div>
+                        </button>
+
+                        <button
+                            class="suggestion"
+                            data-prompt="Crée-moi une idée de site web futuriste."
+                        >
+                            <span>✦</span>
+                            <div>
+                                <strong>Create</strong>
+                                <small>Generate a creative idea</small>
+                            </div>
+                        </button>
+
+                        <button
+                            class="suggestion"
+                            data-prompt="Écris-moi un exemple de code JavaScript moderne."
+                        >
+                            <span>&lt;/&gt;</span>
+                            <div>
+                                <strong>Code</strong>
+                                <small>Build something with code</small>
+                            </div>
+                        </button>
+
+                        <button
+                            class="suggestion"
+                            data-prompt="Donne-moi une méthode pour analyser un jeu de données."
+                        >
+                            <span>▦</span>
+                            <div>
+                                <strong>Analyze</strong>
+                                <small>Work with your data</small>
+                            </div>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MESSAGES -->
+                <div
+                    class="messages-container"
+                    id="messagesContainer"
+                ></div>
+
+            </section>
+
+
+            <!-- INPUT AREA -->
+            <section class="composer-section">
+
+                <div class="composer-wrapper">
+
+                    <div class="composer-tools">
+
+                        <button
+                            class="composer-tool"
+                            id="attachBtn"
+                            type="button"
+                        >
+                            ＋
+                        </button>
+
+                        <button
+                            class="composer-tool"
+                            type="button"
+                            data-mode="vision"
+                        >
+                            ◈
+                        </button>
+
+                    </div>
+
+                    <textarea
+                        id="promptInput"
+                        class="prompt-input"
+                        rows="1"
+                        placeholder="Message NEXORA AI..."
+                        autocomplete="off"
+                    ></textarea>
+
+                    <div class="composer-actions">
+
+                        <span class="shortcut">
+                            Enter ↵
+                        </span>
+
+                        <button
+                            class="send-button"
+                            id="sendBtn"
+                            type="button"
+                            aria-label="Send message"
+                        >
+                            ↑
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="composer-note">
+                    NEXORA AI may generate simulated responses.
+                    Verify important information.
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- MOBILE OVERLAY -->
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="workspace.js"></script>
+
+</body>
+</html>

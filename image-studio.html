@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEXORA AI — Image Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="image-studio.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="background-grid"></div>
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <!-- APP -->
+    <div class="studio-app">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-mark">
+                    N
+                </div>
+
+                <div>
+                    <strong>NEXORA</strong>
+                    <span>AI IMAGE STUDIO</span>
+                </div>
+            </div>
+
+            <button class="back-btn" onclick="window.location.href='workspace.html'">
+                ←
+                <span>AI Workspace</span>
+            </button>
+
+            <nav class="studio-nav">
+
+                <button class="nav-item active">
+                    <span>✦</span>
+                    Create
+                </button>
+
+                <button class="nav-item">
+                    <span>◈</span>
+                    History
+                </button>
+
+                <button class="nav-item">
+                    <span>☆</span>
+                    Favorites
+                </button>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+
+                    <div>
+                        <strong>System Online</strong>
+                        <small>NEXORA Core</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <!-- HEADER -->
+            <header class="topbar">
+
+                <button class="mobile-menu" id="mobileMenu">
+                    ☰
+                </button>
+
+                <div>
+                    <span class="eyebrow">CREATIVE ENGINE</span>
+                    <h1>Image Studio</h1>
+                </div>
+
+                <div class="core-status">
+                    <span class="status-dot"></span>
+                    NEXORA Core
+                </div>
+
+            </header>
+
+
+            <!-- CONTENT -->
+            <section class="studio-content">
+
+                <!-- LEFT PANEL -->
+                <section class="creation-panel">
+
+                    <div class="panel-heading">
+                        <div>
+                            <span class="section-label">01 / PROMPT</span>
+                            <h2>Describe your vision</h2>
+                        </div>
+
+                        <span class="ai-badge">AI READY</span>
+                    </div>
+
+
+                    <!-- PROMPT -->
+                    <div class="prompt-box">
+
+                        <textarea
+                            id="promptInput"
+                            placeholder="Describe l'image que tu veux créer..."
+                            rows="6"
+                        ></textarea>
+
+                        <div class="prompt-tools">
+
+                            <button id="enhancePrompt">
+                                ✨ Enhance
+                            </button>
+
+                            <span id="charCount">0 / 1200</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRESETS -->
+                    <div class="presets-section">
+
+                        <div class="section-title">
+                            <span>Presets</span>
+                            <small>Choisir une direction</small>
+                        </div>
+
+                        <div class="preset-grid">
+
+                            <button class="preset" data-prompt="Portrait cinématographique ultra réaliste, éclairage studio premium, détails naturels, profondeur de champ">
+                                <span>◉</span>
+                                Cinematic
+                            </button>
+
+                            <button class="preset" data-prompt="Design futuriste premium, architecture moderne, néons subtils, technologie avancée, rendu photoréaliste">
+                                <span>◇</span>
+                                Futuristic
+                            </button>
+
+                            <button class="preset" data-prompt="Photographie professionnelle réaliste, lumière naturelle, composition élégante, détails haute résolution">
+                                <span>▣</span>
+                                Realistic
+                            </button>
+
+                            <button class="preset" data-prompt="Illustration digitale artistique, composition créative, couleurs harmonieuses, détails raffinés">
+                                <span>✦</span>
+                                Creative
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SETTINGS -->
+                    <div class="settings-section">
+
+                        <div class="section-title">
+                            <span>Generation settings</span>
+                            <small>Configuration</small>
+                        </div>
+
+
+                        <div class="settings-grid">
+
+                            <div class="setting">
+
+                                <label>Aspect ratio</label>
+
+                                <select id="ratioSelect">
+
+                                    <option value="1:1">1:1 — Square</option>
+                                    <option value="16:9">16:9 — Landscape</option>
+                                    <option value="9:16">9:16 — Portrait</option>
+                                    <option value="4:5">4:5 — Social</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="setting">
+
+                                <label>Quality</label>
+
+                                <select id="qualitySelect">
+
+                                    <option value="standard">Standard</option>
+                                    <option value="high">High</option>
+                                    <option value="ultra">Ultra</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- GENERATE -->
+                    <button class="generate-btn" id="generateBtn">
+
+                        <span>✦</span>
+
+                        <strong>Generate Image</strong>
+
+                        <span class="arrow">→</span>
+
+                    </button>
+
+                </section>
+
+
+                <!-- PREVIEW -->
+                <section class="preview-panel">
+
+                    <div class="preview-header">
+
+                        <div>
+                            <span class="section-label">02 / PREVIEW</span>
+                            <h2>Canvas</h2>
+                        </div>
+
+                        <span class="resolution" id="resolutionLabel">
+                            1024 × 1024
+                        </span>
+
+                    </div>
+
+
+                    <div class="canvas-wrapper">
+
+                        <div class="canvas" id="canvas">
+
+                            <div class="canvas-empty">
+
+                                <div class="ai-orb">
+
+                                    <div class="orb-ring ring-one"></div>
+                                    <div class="orb-ring ring-two"></div>
+                                    <div class="orb-ring ring-three"></div>
+
+                                    <div class="orb-core">
+                                        N
+                                    </div>
+
+                                </div>
+
+                                <h3>Your creation starts here</h3>
+
+                                <p>
+                                    Décris ton idée puis lance la génération.
+                                </p>
+
+                                <span class="ready-text">
+                                    NEXORA ENGINE READY
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PREVIEW ACTIONS -->
+                    <div class="preview-actions">
+
+                        <button id="fullscreenBtn">
+                            ⛶ Fullscreen
+                        </button>
+
+                        <button id="downloadBtn">
+                            ↓ Export
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+
+            <!-- HISTORY -->
+            <section class="history-section">
+
+                <div class="history-heading">
+
+                    <div>
+                        <span class="section-label">03 / HISTORY</span>
+                        <h2>Recent creations</h2>
+                    </div>
+
+                    <button id="clearHistory">
+                        Clear
+                    </button>
+
+                </div>
+
+
+                <div class="history-grid" id="historyGrid">
+
+                    <div class="history-empty">
+                        <span>◌</span>
+                        <p>Your generated images will appear here.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- MOBILE OVERLAY -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+
+    <script src="image-studio.js"></script>
+
+</body>
+</html>
